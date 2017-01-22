@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <title>图片裁剪</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+
+    <link rel="stylesheet" type="text/css"  href="./index.css">
+    <script src="http://odji6lyqv.bkt.clouddn.com/jquery.min.js"></script>
+    <script src="./main.js"></script>
+
+</head>
+<body>
+
+<div class="content">
+
+        <div class="content_top">
+            高度:<input type="text" class="img_h">
+            宽度:<input type="text" class="img_w">
+            标题:<input type="text" class="img_t">
+            <button type="button" >确定</button>
+            <input type="file">
+            <button type="button" class="button_big">大图</button>
+            <button type="button" class="button_long">长图</button>
+            <button type="button" class="button_little">小图</button>
+
+            <a class="download" download="download.jpg" href="###" target="_self">
+                <button type="button"  >下载</button>
+            </a>
+            <button type="button" class="do" >gfj</button>
+            <br>
+            <input type="range" name="points" min="50" max="150" id="range">
+            <input type="text" class="img_range">
+        </div>
+    <p class="bottom_title">拖动图片到此</p>
+    <p class="canvas_p"  onselectstart="return false;"></p>
+
+    <div class="handlerBox">
+        <div class="whiteBox">
+
+        </div>
+    </div>
+
+
+</div>
+
+
+</body>
+</html>
